@@ -18,6 +18,12 @@
             android:name=".SearchActivity"
             android:exported="false"/>
         <activity
+            android:name=".SearchActivityMain"
+            android:exported="false"/>
+        <activity
+            android:name=".MovieAdapter"
+            android:exported="false"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
