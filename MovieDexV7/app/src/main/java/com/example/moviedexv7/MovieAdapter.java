@@ -16,7 +16,7 @@ private String[] localdataCHANGE;
         public ViewHolder(View view) {
             super(view);
             // Define click listener for the ViewHolder's View
-            // COULD PUT A ON CLICK LISTENER IN HERE(:
+            // COULD PUT A ON CLICK LISTENER IN HERE(:$
             textView = (TextView) view.findViewById(R.id.textView);
         }
 
@@ -33,7 +33,7 @@ private String[] localdataCHANGE;
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         // Create a new view, which defines the UI of the list item
         View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.activity_search, viewGroup, false);
+                .inflate(R.layout.search_layout, viewGroup, false);
 
         return new ViewHolder(view);
     }
@@ -42,7 +42,8 @@ private String[] localdataCHANGE;
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.getTextView().setText(localdataCHANGE[position]);
+
+            viewHolder.getTextView().setText(localdataCHANGE[position]);
     }
     @Override
     public int getItemCount() {
